@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio de Ahmed Khemiri — Développeur Full Stack Java Spring Boot, Laravel, React, Angular et Vue.js.">
+  <meta name="theme-color" content="#07111f">
+  <title>Ahmed Khemiri | Développeur Full Stack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="header">
+    <nav class="navbar container" aria-label="Navigation principale">
+      <a href="#accueil" class="logo"><span>AK</span> Ahmed Khemiri</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a class="active" href="#accueil">Accueil</a>
+        <a href="#apropos">À propos</a>
+        <a href="#competences">Compétences</a>
+        <a href="#projets">Projets</a>
+        <a href="#contact">Contact</a>
+        <!-- <a href="" class="cv-btn" download>↓ Télécharger CV</a> -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Changer le thème" title="Changer le thème">☾</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="accueil" class="hero">
+      <div class="hero-glow glow-one"></div>
+      <div class="hero-glow glow-two"></div>
+      <div class="container hero-content">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Bonjour, je suis</p>
+          <h1>Ahmed <span>Khemiri</span></h1>
+          <h2>Développeur <strong>Full Stack</strong></h2>
+          <p class="hero-description">Passionné par les technologies web, je crée des applications
+            modernes, performantes et adaptées aux besoins des utilisateurs.
+
+          </p>
+          <div class="hero-actions">
+            <a href="#projets" class="btn primary">Voir mes projets <span>→</span></a>
+            <a href="#contact" class="btn secondary">Me contacter <span>✉</span></a>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/khemiriahmed" target="_blank" rel="noreferrer" aria-label="GitHub"><i
+                class="devicon-github-original"></i></a>
+            <a href="https://www.linkedin.com/in/ahmed-khemiri-19it" target="_blank" rel="noreferrer"
+              aria-label="linkedin"><i class="devicon-linkedin-plain"></i></a>
+            <a href="mailto:khemiriahmed6@gmail.com" aria-label="Email">@</a>
+            <a href="tel:+21650527374" aria-label="Téléphone">☎</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-1">
+          <div class="profile-orbit orbit-a"></div>
+          <div class="profile-orbit orbit-b"></div>
+          <img src="assets/pc.png" style="height:209px" ; alt="">
+          <div class="floating-card card-java"><i class="devicon-java-plain"></i><b>Java</b><small>Spring Boot</small>
+          </div>
+          <div class="floating-card card-react"><i
+              class="devicon-react-original"></i><b>React</b><small>Frontend</small></div>
+          <div class="floating-card card-angular"><i
+              class="devicon-angularjs-plain"></i><b>Angular</b><small>Frontend</small></div>
+          <div class="floating-card card-php"><i class="devicon-php-plain"></i><b>PHP</b><small>Backend</small></div>
+          <div class="floating-card card-laravel"><i class="devicon-laravel-original"></i><b>Laravel</b><small>API
+              REST</small></div>
+          <div class="floating-card card-vue"><i class="devicon-vuejs-plain"></i><b>Vue.js</b><small>Frontend</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="apropos" class="about section">
+      <div class="container about-grid">
+        <div class="portrait-wrap reveal visible">
+          <div class="portrait-ring"></div>
+          <img src="assets/photo.png" alt="Ahmed Khemiri" class="portrait">
+        </div>
+        <div class="about-text reveal visible">
+          <h2>À propos de moi</h2>
+          <div class="under"></div>
+          <p>Développeur Full Stack avec plus de 7 ans d’expérience dans la conception et le développement
+            d’applications web. Solide expertise en React, Vue.js, Angular, PHP/Laravel et Java/Spring Boot, ainsi qu’en
+            développement d’API RESTful et microservices. Maîtrise de la sécurisation des applications avec Spring
+            Security, JWT et Keycloak, des CMS WordPress, PrestaShop et Drupal, ainsi que des bases de données MySQL et
+            PostgreSQL.</p>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <section id="competences" class="section dark-section">
+      <div class="container">
+        <p class="section-label reveal">STACK TECHNIQUE</p>
+        <h2 class="reveal">Technologies que j’utilise</h2>
+        <div class="gradient-line reveal"></div>
+        <div class="skills-grid">
+          <div class="skill reveal"><i class="devicon-java-plain colored"></i><b>Java</b><span>Spring Boot</span></div>
+          <div class="skill reveal"><i class="devicon-spring-original colored"></i><b>Spring</b><span>Security ·
+              JPA</span></div>
+          <div class="skill reveal"><i class="devicon-angularjs-plain colored"></i><b>Angular</b><span>TypeScript ·
+              RxJS</span></div>
+          <div class="skill reveal"><i class="devicon-react-original colored"></i><b>React</b><span>Hooks · Axios</span>
+          </div>
+          <div class="skill reveal"><i class="devicon-vuejs-plain colored"></i><b>Vue.js</b><span>Vuex · Pinia</span>
+          </div>
+          <div class="skill reveal"><i class="devicon-php-plain colored"></i><b>PHP</b><span>Backend</span></div>
+          <div class="skill reveal"><i class="devicon-laravel-original colored"></i><b>Laravel</b><span>Sanctum ·
+              Eloquent</span></div>
+          <div class="skill reveal"><i class="devicon-mysql-original colored"></i><b>MySQL</b><span>SQL ·
+              Relations</span></div>
+          <div class="skill reveal"><i
+              class="devicon-postgresql-plain colored"></i><b>PostgreSQL</b><span>Database</span></div>
+          <div class="skill reveal"><i class="devicon-docker-plain colored"></i><b>Docker</b><span>Compose</span></div>
+          <div class="skill reveal"><i class="devicon-git-plain colored"></i><b>Git</b><span>GitHub · GitLab</span>
+          </div>
+          <div class="skill reveal"><i class="devicon-wordpress-plain colored"></i><b>WordPress</b><span>CMS</span>
+          </div>
+          <div class="skill reveal"><i class="devicon-drupal-plain colored"></i><b>Drupal</b><span>CMS</span></div>
+          <div class="skill reveal"><i class="devicon-prestashop-plain "></i><b>PrestaShop</b><span>CMS</span></div>
+        </div>
+        <!-- <div class="security-strip reveal">
+          <span>🔐 Sécurité</span><b>Spring Security</b><b>JWT</b><b>Keycloak</b><b>OAuth2</b><span>☁ Architecture</span><b>Spring Cloud</b><b>Eureka</b><b>API Gateway</b><b>Kafka</b>
+        </div> -->
+      </div>
+    </section>
+
+    <section id="projets" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-label">PROJETS</p>
+            <h2>Des produits web orientés métier</h2>
+            <div class="gradient-line"></div>
+          </div>
+        
+        </div>
+
+        <div class="projects-grid">
+          <article class="project reveal" data-category="java">
+            <div class="project-image affiplus">
+              <span>AFFI+</span><em>Energy · Telecom</em>
+              <div class="mini-chart"><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="project-body">
+            
+              <h3>Affi+</h3>
+              <p>Plateforme proposant des offres de contrats énergie et télécoms adaptées à la consommation de
+                l’utilisateur.</p>
+              
+            </div>
+          </article>
+          <article class="project reveal delay-1" data-category="java">
+            <div class="project-image helee"><span>HELEE</span><em>CRM · Leads</em>
+              <div class="crm-ui"><b></b><b></b><b></b><b></b></div>
+            </div>
+            <div class="project-body">
+              
+              <h3>Helee</h3>
+              <p>CRM dédiée à la vente de leads avec filtrage avancé selon les critères métier et suivi statistique.</p>
+              
+          </article>
+          <article class="project reveal delay-2" data-category="java">
+            <div class="project-image scribb"><span>SCRIBB</span><em>AI · Quality</em>
+              <div class="ai-bars"><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="project-body">
+            
+              <h3>Scribb</h3>
+              <p>CRM intégrant l’intelligence artificielle pour le contrôle qualité et l’optimisation des performances
+                en centre d’appel.</p>
+              
+            </div>
+          </article>
+          <article class="project reveal" data-category="laravel">
+            <div class="project-image afficonnect"><span>AFFICONNECT</span><em>CRM · Sales</em>
+              <div class="connect-nodes"><i></i><i></i><i></i></div>
+            </div>
+            <div class="project-body">
+              <h3>Afficonnect</h3>
+              <p>CRM & scripteur de vente multi-produits utilisé par des centaines d’agents en centres d’appel.</p>
+              
+          </article>
+          <article class="project reveal" data-category="frontend">
+            <div class="project-image cms"><span>SMARTECH</span><em>Cms - Site vitrine WordPress</em>
+              <div class="cms-window"></div>
+            </div>
+            <div class="project-body">
+              <h3>Smartech</h3>
+              <p> Site vitrine spécialise dans la gestion et la maintenance des actifs avec la solution IBM Maximo Enterprise </p>
+             
+          </article>
+
+             <article class="project reveal" data-category="frontend">
+            <div class="project-image cms"><span style="text-transform:uppercase;">La malle aux lutins</span><em>Cms - Site e-commerce prestashop</em>
+              <div class="cms-window"></div>
+            </div>
+            <div class="project-body">
+              <h3>La malle aux lutins</h3>
+              <p>site e-commerce permettent d'acheter des vêtements pour enfants en France avec une livraison à domicile</p>
+             
+          </article>
+
+
+           <article class="project reveal" data-category="frontend">
+       
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <p class="section-label">
+            CONTACT</p>
+          <h2>N'hésitez pas à me contacter.</h2>
+          <div class="gradient-line">
+
+          </div>
+          <p class="contact-text">Une opportunité ou une collaboration ? Écrivez-moi directement.</p>
+          <div class="contact-info">
+            <a href="mailto:khemiriahmed6@gmail.com">✉ <span>khemiriahmed6@gmail.com</span></a>
+            <a href="tel:+21650527374">☎ <span>+216 50 52 73 74</span></a>
+            <a href="https://www.linkedin.com/in/ahmed-khemiri-19it" target="_blank"><i
+                class="devicon-linkedin-plain"></i> Linkedin/khemiriahmed</a>
+            <a href="https://github.com/khemiriahmed" target="_blank" rel="noreferrer"><i
+                class="devicon-github-original"></i> <span>github.com/khemiriahmed</span></a>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+  </main>
+
+  <button class="back-top" id="backTop" aria-label="Retour en haut">↑</button>
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Ahmed Khemiri. Tous droits réservés.</p>
+      <div class="footer-links"><a href="#accueil">Accueil</a><a href="#projets">Projets</a><a
+          href="#contact">Contact</a></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
