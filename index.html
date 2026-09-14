@@ -14,6 +14,15 @@
   <!-- Favicon -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D8SKX0Y0SR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-D8SKX0Y0SR');
+  </script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <link rel="stylesheet" href="style.css">
@@ -24,16 +33,16 @@
 
   <header class="header">
     <nav class="navbar container" aria-label="Navigation principale">
-      <a href="#accueil" class="logo"><span>AK</span> Ahmed Khemiri</a>
+      <a href="#accueil" class="logo" onclick="trackClick('accueil')"><span>AK</span> Ahmed Khemiri</a>
       <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <div class="nav-links" id="navLinks">
-        <a class="active" href="#accueil">Accueil</a>
-        <a href="#apropos">À propos</a>
-        <a href="#competences">Compétences</a>
-        <a href="#projets">Projets</a>
-        <a href="#contact">Contact</a>
+        <a class="active" href="#accueil"  onclick="trackClick('github')">Accueil</a>
+        <a href="#apropos"  onclick="trackClick('propos')">À propos</a>
+        <a href="#competences"  onclick="trackClick('competences')">Compétences</a>
+        <a href="#projets"  onclick="trackClick('projets')">Projets</a>
+        <a href="#contact"  onclick="trackClick('contact')">Contact</a>
         <!-- <a href="" class="cv-btn" download>↓ Télécharger CV</a> -->
         <button class="theme-toggle" id="themeToggle" aria-label="Changer le thème" title="Changer le thème">☾</button>
       </div>
@@ -54,16 +63,16 @@
 
           </p>
           <div class="hero-actions">
-            <a href="#projets" class="btn primary">Voir mes projets <span>→</span></a>
-            <a href="#contact" class="btn secondary">Me contacter <span>✉</span></a>
+            <a href="#projets" class="btn primary" onclick="trackClick('projects')">Voir mes projets <span>→</span></a>
+            <a href="#contact" class="btn secondary" onclick="trackClick('contact')">Me contacter <span>✉</span></a>
           </div>
           <div class="socials">
-            <a href="https://github.com/khemiriahmed" target="_blank" rel="noreferrer" aria-label="GitHub"><i
+            <a href="https://github.com/khemiriahmed" onclick="trackClick('github')" target="_blank" rel="noreferrer" aria-label="GitHub"><i
                 class="devicon-github-original"></i></a>
-            <a href="https://www.linkedin.com/in/ahmed-khemiri-19it" target="_blank" rel="noreferrer"
+            <a href="https://www.linkedin.com/in/ahmed-khemiri-19it" onclick="trackClick('linkedin')" target="_blank" rel="noreferrer"
               aria-label="linkedin"><i class="devicon-linkedin-plain"></i></a>
-            <a href="mailto:khemiriahmed6@gmail.com" aria-label="Email">@</a>
-            <a href="tel:+21650527374" aria-label="Téléphone">☎</a>
+            <a href="mailto:khemiriahmed6@gmail.com" aria-label="Email" onclick="trackClick('email')">@</a>
+            <a href="tel:+21650527374" aria-label="Téléphone" onclick="trackClick('tel')">☎</a>
           </div>
         </div>
 
@@ -242,11 +251,11 @@
           </div>
           <p class="contact-text">Une opportunité ou une collaboration ? Écrivez-moi directement.</p>
           <div class="contact-info">
-            <a href="mailto:khemiriahmed6@gmail.com">✉ <span>khemiriahmed6@gmail.com</span></a>
-            <a href="tel:+21650527374">☎ <span>+216 50 52 73 74</span></a>
-            <a href="https://www.linkedin.com/in/ahmed-khemiri-19it" target="_blank"><i
+            <a href="mailto:khemiriahmed6@gmail.com" onclick="trackClick('email')">✉ <span>khemiriahmed6@gmail.com</span></a>
+            <a href="tel:+21650527374" onclick="trackClick('tel')">☎ <span>+216 50 52 73 74</span></a>
+            <a href="https://www.linkedin.com/in/ahmed-khemiri-19it"  onclick="trackClick('linkedin')"target="_blank"><i
                 class="devicon-linkedin-plain"></i> Linkedin/khemiriahmed</a>
-            <a href="https://github.com/khemiriahmed" target="_blank" rel="noreferrer"><i
+            <a href="https://github.com/khemiriahmed"  onclick="trackClick('github')" target="_blank" rel="noreferrer"><i
                 class="devicon-github-original"></i> <span>github.com/khemiriahmed</span></a>
           </div>
         </div>
@@ -260,11 +269,20 @@
   <footer class="footer">
     <div class="container footer-content">
       <p>© <span id="year"></span> Ahmed Khemiri. Tous droits réservés.</p>
-      <div class="footer-links"><a href="#accueil">Accueil</a><a href="#projets">Projets</a><a
-          href="#contact">Contact</a></div>
+      <div class="footer-links"><a href="#accueil" onclick="trackClick('accueil')" >Accueil</a><a href="#projets" onclick="trackClick('projects')">Projets</a><a
+          href="#contact" onclick="trackClick('contact')">Contact</a></div>
     </div>
   </footer>
   <script src="script.js"></script>
+  <script>
+    function trackClick(type) {
+    if (typeof gtag === "function") {
+        gtag("event", "portfolio_click", {
+            click_type: type
+        });
+    }
+}
+  </script>
 </body>
 
 </html>
